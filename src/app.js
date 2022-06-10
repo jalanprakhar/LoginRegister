@@ -10,7 +10,7 @@ app.use(express.json())
 app.set("view engine","hbs");
 const RegisterRouter=require('./routers/register');
 app.use(express.static(staticPath));
-app.use(RegisterRouter);5
+app.use(RegisterRouter);
 
 
 
