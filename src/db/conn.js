@@ -1,9 +1,11 @@
-require('dotenv').config()
-const mongoose=require('mongoose');
+require("dotenv").config();
+const mongoose = require("mongoose");
 
-
-mongoose.connect(`mongodb://localhost:27017/${process.env.DBASE_NAME}`).then(()=>{
+mongoose
+  .connect(`mongodb://localhost:27017/NetworkSecurity`)
+  .then(() => {
     console.log("Connection successfull");
-}).catch((e)=>{
+  })
+  .catch((e) => {
     console.log(e);
-});
+  });
